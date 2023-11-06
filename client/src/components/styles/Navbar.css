@@ -12,6 +12,11 @@
   border-bottom: 0.1px solid #607b967e;
 }
 
+#nav .active {
+  color: white;
+  border-bottom: 2px solid #fea55f;
+}
+
 .navbar__brand {
   border-right: 0.1px solid #607b967e;
   padding: 10px;
