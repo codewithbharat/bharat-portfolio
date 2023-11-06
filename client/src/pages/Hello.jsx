@@ -6,10 +6,16 @@ import { IoIosArrowForward } from 'react-icons/io'
 import green from './assets/hello/green.svg'
 import blue from './assets/hello/blue.svg'
 
+import { motion } from 'framer-motion'
+
 const Hello = () => {
     return (
         <div className="hello">
-            <div className="hello__text">
+            <motion.div
+                animate={{ x: 0 }}
+                initial={{ x: -40 }}
+                transition={{ duration: 0.3 }}
+                className="hello__text">
                 <div className="hello__text-intro">
                     <span>Hi all, I am</span>
                     <h1>Bharat Ranjan</h1>
@@ -24,8 +30,10 @@ const Hello = () => {
                         <a href="https://github.com/codewithbharat/" className="hello__text-code__string">"https://github.com/codewithbharat/"</a>
                     </p>
                 </div>
-            </div>
-            <div className="hello__app">
+            </motion.div>
+            <div
+
+                className="hello__app">
                 <img className='hellp__app__svg-green' src={green} alt="" />
                 <img className='hellp__app__svg-blue' src={blue} alt="" />
             </div>
