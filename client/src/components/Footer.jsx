@@ -9,12 +9,12 @@ const Footer = () => {
         <div className="footer">
             <div className="footer__left">
                 <span>find me in :</span>
-                <a href="#"><AiOutlineTwitter /> </a>
-                <a href="#"> <BiLogoLinkedin /> </a>
-                <a href="#"> <BsInstagram /> </a>
+                <a href="https://twitter.com/bhaarat_ranjan"><AiOutlineTwitter /> </a>
+                <a href="https://www.linkedin.com/in/codewithbharat/"> <BiLogoLinkedin /> </a>
+                <a href="https://www.instagram.com/bhaarat.ranjan/"> <BsInstagram /> </a>
             </div>
             <div className="footer__right">
-                <a href="#"> @codewithbharat <BiLogoGithub /></a>
+                <a href="https://github.com/codewithbharat"> @codewithbharat <BiLogoGithub /></a>
             </div>
         </div>
     )
