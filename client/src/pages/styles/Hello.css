@@ -92,6 +92,7 @@
 .hello__text-code__string {
   color: #e99287;
   text-decoration: none;
+  font-size: 18px;
 }
 
 .hello__app {
