@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #011627;
+  height: 40px;
+  border-top: 0.1px solid #607b967e;
+  border-bottom: 0.1px solid #607b967e;
+}
+
+.footer__left {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__left span,
+.footer__left a,
+.footer__right a {
+  border-right: 0.1px solid #607b967e;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #607b96;
+  font-family: Fira Code;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer__right {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__right a {
+  border-right: none;
+  border-left: 0.1px solid #607b967e;
+}
