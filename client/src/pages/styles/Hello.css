@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Lato:wght@400;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@600&family=Raleway&family=Roboto:wght@300;400;700&display=swap");
+
+.hello {
+  background-color: #011627;
+
+  width: 100%;
+  position: absolute;
+  bottom: 40px;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello__text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello__text-intro {
+  padding-bottom: 50px;
+  width: 60%;
+}
+
+.hello__text-intro span {
+  color: #e5e9f0;
+  padding-left: 5px;
+  font-family: Fira Code;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+
+.hello__text-intro h1 {
+  color: #e5e9f0;
+  font-family: Fira Code;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hello__text-intro p {
+  color: #4d5bce;
+  font-family: Fira Code;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+
+  display: flex;
+  align-items: center;
+}
+
+.hello__text-code__comment {
+  color: #607b96;
+  font-family: Fira Code;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+
+.hello__text-code p {
+  padding-top: 5px;
+}
+
+.hello__text-code p span {
+  font-family: Fira Code;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.hello__text-code__dataType {
+  color: #4d5bce;
+}
+
+.hello__text-code__var {
+  color: #43d9ad;
+}
+
+.hello__text-code__equal {
+  color: #fff;
+}
+
+.hello__text-code__string {
+  color: #e99287;
+  text-decoration: none;
+}
+
+.hello__app {
+  width: 50%;
+  display: flex;
+}
+
+.hello__app img {
+  width: 50%;
+  width: 50%;
+}
+
+.hellp__app__svg-green {
+  position: absolute;
+  right: 150px;
+  top: -20px;
+  opacity: 60%;
+}
+
+.hellp__app__svg-blue {
+  position: absolute;
+  right: 6dvb;
+  top: 60px;
+  opacity: 50%;
+}
