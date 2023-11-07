@@ -91,7 +91,7 @@
   }
   .navbar__links {
     position: absolute;
-    top: 40px;
+    top: 41px;
     right: 0;
     left: 0;
     display: flex;
@@ -108,6 +108,12 @@
     width: 100%;
     border: none;
     background-color: #011627;
+  }
+
+  .navbar__links-left__link,
+  .navbar__links-right__link {
+    border: none;
+    border-bottom: 0.1px solid #607b967e;
   }
 
   .navbar__ham {
