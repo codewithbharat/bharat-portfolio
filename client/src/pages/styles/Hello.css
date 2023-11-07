@@ -97,24 +97,25 @@
 .hello__app {
   width: 50%;
   display: flex;
+  position: relative;
 }
 
 .hello__app img {
-  width: 50%;
-  width: 50%;
+  width: 60%;
+  width: 60%;
 }
 
 .hellp__app__svg-green {
   position: absolute;
-  right: 150px;
-  top: -20px;
+  right: 300px;
+  top: -300px;
   opacity: 60%;
 }
 
 .hellp__app__svg-blue {
   position: absolute;
-  right: 6dvb;
-  top: 60px;
+  right: 200px;
+  top: -200px;
   opacity: 50%;
 }
 
