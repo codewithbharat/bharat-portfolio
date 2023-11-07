@@ -52,6 +52,12 @@
   line-height: normal;
 }
 
+.navbar__brand-name:hover,
+.navbar__links-left__link:hover,
+.navbar__links-right__link:hover {
+  color: #fff;
+}
+
 .navbar__links-right {
   margin-left: auto;
   height: 100%;

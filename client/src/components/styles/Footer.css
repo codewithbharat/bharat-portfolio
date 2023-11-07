@@ -31,6 +31,11 @@
   line-height: normal;
 }
 
+.footer__left a:hover,
+.footer__right a:hover {
+  color: #fff;
+}
+
 .footer__right {
   margin-left: auto;
   display: flex;

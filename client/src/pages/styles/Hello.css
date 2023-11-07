@@ -117,3 +117,49 @@
   top: 60px;
   opacity: 50%;
 }
+
+@media (max-width: 480px) {
+  .hello__text {
+    width: 100%;
+    align-items: flex-start;
+    padding: 30px;
+  }
+
+  .hello__text-intro {
+    width: 100%;
+    padding-bottom: 150px;
+  }
+
+  .hello__text-intro span {
+    font-size: 14px;
+  }
+
+  .hello__text-intro h1 {
+    line-height: 1.1;
+  }
+
+  .hello__text-intro p {
+    font-size: 20px;
+    color: #43d9ad;
+    margin-top: 5px;
+  }
+
+  .hello__text-code__comment {
+    visibility: hidden;
+    position: relative;
+    font-size: 12px;
+  }
+
+  .hello__text-code__comment:after {
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    content: "// find my profile on Github:";
+  }
+
+  .hello__app {
+    display: none;
+  }
+}
