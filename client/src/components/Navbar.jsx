@@ -33,6 +33,18 @@ const Navbar = () => {
                     {toggle && <RxCross1 />}
                 </span>
             </div>
+
+            {!toggle && <div id='nav__web' className="navbar__links">
+                <div className="navbar__links-left" onClick={() => { scrollTop(); setToggle(!toggle); }}>
+                    <NavLink className="navbar__links-left__link" to="/">_hello</NavLink>
+                    <NavLink className="navbar__links-left__link" to="/about">_about-me</NavLink>
+                    <NavLink className="navbar__links-left__link" to="/projects">_projects</NavLink>
+                </div>
+                <div className="navbar__links-right" onClick={() => { scrollTop(); setToggle(!toggle); }}>
+                    <NavLink className="navbar__links-right__link" to="/contact">_contact-me</NavLink>
+                </div>
+            </div>}
+
             {toggle && <div className="navbar__links">
                 <div className="navbar__links-left" onClick={() => { scrollTop(); setToggle(!toggle); }}>
                     <NavLink className="navbar__links-left__link" to="/">_hello</NavLink>
