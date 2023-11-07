@@ -46,3 +46,17 @@
   border-right: none;
   border-left: 0.1px solid #607b967e;
 }
+
+@media (max-width: 480px) {
+  .footer__left span {
+    font-size: 12px;
+    padding-right: 25px;
+  }
+  .footer__right {
+    margin: 0;
+  }
+
+  .footer__right a span {
+    display: none;
+  }
+}

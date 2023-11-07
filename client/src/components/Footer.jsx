@@ -13,7 +13,7 @@ const Footer = () => {
                 <a href="https://www.instagram.com/bhaarat.ranjan/"> <BiLogoInstagram /></a>
             </div>
             <div className="footer__right">
-                <a href="https://github.com/codewithbharat"> @codewithbharat <BiLogoGithub /></a>
+                <a href="https://github.com/codewithbharat"> <span>@codewithbharat</span> <BiLogoGithub /></a>
             </div>
         </div>
     )
