@@ -161,6 +161,14 @@
   }
 
   .hello__app {
-    display: none;
+    position: absolute;
+    right: -160px;
+    bottom: 230px;
+    width: 100%;
+  }
+
+  .hello__app img {
+    width: 80%;
+    width: 80%;
   }
 }
