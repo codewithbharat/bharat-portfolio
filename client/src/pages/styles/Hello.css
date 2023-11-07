@@ -121,12 +121,17 @@
 
 @media (max-width: 480px) {
   .hello__text {
+    background-image: url("../assets/hello/green.svg");
+    background-size: cover;
     width: 100%;
     align-items: flex-start;
     padding: 30px;
   }
 
   .hello__text-intro {
+    background-image: url("../assets/hello/blue.svg");
+    background-size: cover;
+
     width: 100%;
     padding-bottom: 150px;
   }
@@ -161,14 +166,6 @@
   }
 
   .hello__app {
-    position: absolute;
-    right: -160px;
-    bottom: 230px;
-    width: 100%;
-  }
-
-  .hello__app img {
-    width: 80%;
-    width: 80%;
+    display: none;
   }
 }
