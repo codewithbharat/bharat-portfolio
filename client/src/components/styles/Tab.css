@@ -9,15 +9,9 @@
   height: 30px;
   border-bottom: 0.1px solid #607b967e;
 }
-.tab__icon {
-  padding: 8px 0px;
-  padding-left: 10px;
-  color: #ff5733;
-}
 
 .tab__name {
   padding: 5px 10px;
-  padding-left: 5px;
   font-family: Fira Code;
   font-size: 16px;
   font-style: normal;
