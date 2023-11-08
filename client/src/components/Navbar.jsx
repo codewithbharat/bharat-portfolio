@@ -30,7 +30,7 @@ const Navbar = () => {
                 <div className="navbar__links-left" onClick={() => { scrollTop(); setToggle(!toggle); }}>
                     {
                         LinksLeft.map((link) => (
-                            <NavLink to={link.to} className="navbar__links-left__link">{link.text}</NavLink>
+                            <NavLink key={link.text} to={link.to} className="navbar__links-left__link">{link.text}</NavLink>
                         ))
                     }
                 </div>
