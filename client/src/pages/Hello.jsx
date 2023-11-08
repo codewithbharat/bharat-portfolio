@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './styles/Hello.css'
 
 import { IoIosArrowForward } from 'react-icons/io'
@@ -9,6 +9,9 @@ import blue from './assets/hello/blue.svg'
 import { motion } from 'framer-motion'
 
 const Hello = () => {
+    useEffect(() => {
+        document.title = "Bharat Ranjan";
+    }, []);
     return (
         <div className="hello">
             <motion.div
