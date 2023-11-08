@@ -29,18 +29,21 @@ const Contact = () => {
                     <form>
                         <label>_name:
                             <input type="text"
+                                maxLength={20}
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                             />
                         </label>
                         <label>_email:
                             <input type="text"
+                                maxLength={20}
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                             />
                         </label>
                         <label>_message:
                             <textarea
+                                maxLength={300}
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                             />
