@@ -22,6 +22,10 @@
   align-items: center;
 }
 
+.sidebar__brand:hover {
+  cursor: pointer;
+}
+
 .sidebar__brand-icon {
   padding-top: 2px;
   font-size: 14px;
