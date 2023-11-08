@@ -35,3 +35,10 @@
 .sidebar__child {
   padding: 10px 20px;
 }
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    border-right: none;
+  }
+}

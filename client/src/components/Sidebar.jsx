@@ -6,16 +6,24 @@ import { motion } from 'framer-motion'
 const Sidebar = ({ children, brand }) => {
 
     const [toggle, setToggle] = useState(false);
+    const [width, setWidth] = useState(window.innerWidth);
+
 
     useEffect(() => {
-        setTimeout(() => {
-            setToggle(true)
-        }, 500)
+        if (width > 480) {
+            setTimeout(() => {
+                setToggle(true)
+            }, 500);
+        }
+
     }, [])
     return (
         <motion.div
-            animate={{ x: 0 }}
-            initial={{ x: -300 }}
+            animate={{ x: 0, y: 0 }}
+            initial={{
+                x: width > 480 ? -300 : 0,
+                y: width < 480 ? -40 : 0
+            }}
             transition={{ duration: 0.3 }}
             className="sidebar">
             <div className="sidebar__brand" onClick={() => setToggle(!toggle)}>
