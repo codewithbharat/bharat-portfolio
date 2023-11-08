@@ -19,6 +19,21 @@ const Navbar = () => {
         window.scrollTo(0, 0);
     }
 
+    const NavbarLinks = () => {
+        return (
+            <>
+                <div className="navbar__links-left" onClick={() => { scrollTop(); setToggle(!toggle); }}>
+                    <NavLink className="navbar__links-left__link" to="/">_hello</NavLink>
+                    <NavLink className="navbar__links-left__link" to="/about">_about-me</NavLink>
+                    <NavLink className="navbar__links-left__link" to="/projects">_projects</NavLink>
+                </div>
+                <div className="navbar__links-right" onClick={() => { scrollTop(); setToggle(!toggle); }}>
+                    <NavLink className="navbar__links-right__link" to="/contact">_contact-me</NavLink>
+                </div>
+            </>
+        )
+    }
+
     return (
         <div id='nav' className="navbar" onClick={() => scrollTop()}>
             <div className="navbar__brand">
@@ -35,25 +50,11 @@ const Navbar = () => {
             </div>
 
             {!toggle && <div id='nav__web' className="navbar__links">
-                <div className="navbar__links-left" onClick={() => { scrollTop(); setToggle(!toggle); }}>
-                    <NavLink className="navbar__links-left__link" to="/">_hello</NavLink>
-                    <NavLink className="navbar__links-left__link" to="/about">_about-me</NavLink>
-                    <NavLink className="navbar__links-left__link" to="/projects">_projects</NavLink>
-                </div>
-                <div className="navbar__links-right" onClick={() => { scrollTop(); setToggle(!toggle); }}>
-                    <NavLink className="navbar__links-right__link" to="/contact">_contact-me</NavLink>
-                </div>
+                <NavbarLinks />
             </div>}
 
             {toggle && <div className="navbar__links">
-                <div className="navbar__links-left" onClick={() => { scrollTop(); setToggle(!toggle); }}>
-                    <NavLink className="navbar__links-left__link" to="/">_hello</NavLink>
-                    <NavLink className="navbar__links-left__link" to="/about">_about-me</NavLink>
-                    <NavLink className="navbar__links-left__link" to="/projects">_projects</NavLink>
-                </div>
-                <div className="navbar__links-right" onClick={() => { scrollTop(); setToggle(!toggle); }}>
-                    <NavLink className="navbar__links-right__link" to="/contact">_contact-me</NavLink>
-                </div>
+                <NavbarLinks />
             </div>}
 
 
