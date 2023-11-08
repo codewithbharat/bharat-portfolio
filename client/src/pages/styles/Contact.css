@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Lato:wght@400;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@600&family=Raleway&family=Roboto:wght@300;400;700&display=swap");
+
 .contact {
   background-color: #011627;
   color: white;
@@ -8,4 +10,79 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contact__page {
+  position: absolute;
+  top: 31px;
+  right: 0;
+  left: 236px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__page-form {
+  width: 50%;
+  height: 100%;
+  border-right: 0.1px solid #607b967e;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__page-form form {
+  width: 60%;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__page-form label {
+  display: flex;
+  flex-direction: column;
+
+  color: #607b96;
+  font-family: Fira Code;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.contact__page-form input,
+.contact__page-form textarea {
+  margin-top: 5px;
+  display: block;
+  border-radius: 8px;
+  border: 0.1px solid #607b96;
+  background: #011221;
+  box-shadow: 0px 0px 0px 2px rgba(96, 123, 150, 0.3);
+  color: #465e77;
+  font-size: 18px;
+  padding: 12px 10px;
+}
+
+.contact__page-form textarea {
+  height: 100px;
+}
+
+.contact__page-form #submit {
+  width: 150px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #1c2b3a;
+  color: #fff;
+  font-family: Fira Code;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  box-shadow: none;
+}
+
+.contact__page-code {
+  width: 50%;
 }
