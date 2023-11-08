@@ -42,5 +42,7 @@
   .sidebar {
     width: 100%;
     border-right: none;
+    position: absolute;
+    bottom: unset;
   }
 }
