@@ -1,17 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './styles/Sidebar.css'
 
-const Sidebar = () => {
+import { BiSolidDownArrow, BiSolidRightArrow } from "react-icons/bi"
+
+const Sidebar = ({ children, brand }) => {
+
+    const [toggle, setToggle] = useState(true);
     return (
         <div className="sidebar">
-            <div className="siderbar__dropMenu">
-                <span className="sidebar__dropMenu-icon"></span>
-                <span className="sidebar__dropMenu-name"></span>
+            <div className="sidebar__brand" onClick={() => setToggle(!toggle)}>
+                <span className="sidebar__brand-icon">
+                    {toggle ? <BiSolidDownArrow /> : <BiSolidRightArrow />}
+                </span>
+                <span className="sidebar__brand-name"> {brand} </span>
             </div>
-            <div className="sidebar__links">
-                <span className="sidebar__links-icon"></span>
-                <span className="sidebar__links-name"></span>
-            </div>
+            {toggle && <div className="sidebar__child">
+                {children}
+            </div>}
         </div>
     )
 }

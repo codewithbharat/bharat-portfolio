@@ -6,7 +6,9 @@ import Sidebar from '../components/Sidebar'
 const About = () => {
     return (
         <div className="about">
-            <Sidebar />
+            <Sidebar brand="About">
+                children
+            </Sidebar>
             <Tab name="about-me" />
         </div>
     )

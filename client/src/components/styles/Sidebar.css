@@ -7,3 +7,27 @@
   border-right: 0.1px solid #607b967e;
   color: white;
 }
+
+.sidebar__brand {
+  color: #607b96;
+  padding: 4.6px 10px;
+  padding-left: 20px;
+  font-family: Fira Code;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-bottom: 0.1px solid #607b967e;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__brand-icon {
+  padding-top: 2px;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.sidebar__child {
+  padding: 10px 20px;
+}

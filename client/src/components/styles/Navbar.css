@@ -20,7 +20,8 @@
 .navbar__brand {
   border-right: 0.1px solid #607b967e;
   padding: 10px;
-  padding-right: 100px;
+  padding-right: 90px;
+  padding-left: 20px;
 }
 
 .navbar__brand-name {

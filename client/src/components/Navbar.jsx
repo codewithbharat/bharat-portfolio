@@ -40,13 +40,7 @@ const Navbar = () => {
                 <Link to="/" className='navbar__brand-name'>bharat-ranjan</Link>
             </div>
             <div className="navbar__ham" onClick={() => setToggle(!toggle)}>
-                <span>
-                    {!toggle && <RxHamburgerMenu />}
-                </span>
-
-                <span>
-                    {toggle && <RxCross1 />}
-                </span>
+                {!toggle ? <RxHamburgerMenu /> : <RxCross1 />}
             </div>
 
             {!toggle && <div id='nav__web' className="navbar__links">

@@ -7,7 +7,9 @@ const Contact = () => {
     return (
         <div className="contact">
             <Tab name="contacts" />
-            <Sidebar />
+            <Sidebar brand="Contact">
+                children
+            </Sidebar>
             contact me
         </div>
     )
