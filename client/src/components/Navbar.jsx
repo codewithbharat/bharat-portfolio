@@ -20,15 +20,22 @@ const Navbar = () => {
     }
 
     const NavbarLinks = () => {
+        const LinksLeft = [
+            { to: "/", text: "_hello" },
+            { to: "/about", text: "_about-me" },
+            { to: "/projects", text: "_projects" }
+        ]
         return (
             <>
                 <div className="navbar__links-left" onClick={() => { scrollTop(); setToggle(!toggle); }}>
-                    <NavLink className="navbar__links-left__link" to="/">_hello</NavLink>
-                    <NavLink className="navbar__links-left__link" to="/about">_about-me</NavLink>
-                    <NavLink className="navbar__links-left__link" to="/projects">_projects</NavLink>
+                    {
+                        LinksLeft.map((link) => (
+                            <NavLink to={link.to} className="navbar__links-left__link">{link.text}</NavLink>
+                        ))
+                    }
                 </div>
                 <div className="navbar__links-right" onClick={() => { scrollTop(); setToggle(!toggle); }}>
-                    <NavLink className="navbar__links-right__link" to="/contact">_contact-me</NavLink>
+                    <NavLink to="/contact" className="navbar__links-right__link">_contact-me</NavLink>
                 </div>
             </>
         )
