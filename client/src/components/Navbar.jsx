@@ -43,7 +43,7 @@ const Navbar = () => {
 
     return (
         <div id='nav' className="navbar" onClick={() => scrollTop()}>
-            <div className="navbar__brand" onClick={() => setToggle(!toggle)}>
+            <div className="navbar__brand" onClick={() => setToggle(false)}>
                 <Link to="/" className='navbar__brand-name'>bharat-ranjan</Link>
             </div>
             <div className="navbar__ham" onClick={() => setToggle(!toggle)}>
