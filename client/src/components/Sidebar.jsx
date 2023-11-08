@@ -1,11 +1,17 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './styles/Sidebar.css'
 import { BiSolidDownArrow, BiSolidRightArrow } from "react-icons/bi"
 import { motion } from 'framer-motion'
 
 const Sidebar = ({ children, brand }) => {
 
-    const [toggle, setToggle] = useState(true);
+    const [toggle, setToggle] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setToggle(true)
+        }, 500)
+    }, [])
     return (
         <motion.div
             animate={{ x: 0 }}
@@ -18,9 +24,13 @@ const Sidebar = ({ children, brand }) => {
                 </span>
                 <span className="sidebar__brand-name"> {brand} </span>
             </div>
-            {toggle && <div className="sidebar__child">
+            {toggle && <motion.div
+                animate={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{ duration: 0.4 }}
+                className="sidebar__child">
                 {children}
-            </div>}
+            </motion.div>}
         </motion.div>
     )
 }
