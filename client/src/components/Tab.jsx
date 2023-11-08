@@ -2,10 +2,15 @@ import React from 'react'
 import './styles/Tab.css'
 import { RxCross1 } from 'react-icons/rx'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const Tab = ({ name }) => {
     return (
-        <div className="tab">
+        <motion.div
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{ duration: 0.3, delay: 0.3 }}
+            className="tab">
             <div className="tab__name">
                 <span>{name}</span>.html
             </div>
@@ -16,7 +21,7 @@ const Tab = ({ name }) => {
                     <RxCross1 />
                 </Link>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
