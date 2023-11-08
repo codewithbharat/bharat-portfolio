@@ -39,3 +39,9 @@
 .tab__cross .a {
   color: inherit;
 }
+
+@media (max-width: 480px) {
+  .tab {
+    display: none;
+  }
+}
