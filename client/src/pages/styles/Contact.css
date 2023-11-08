@@ -84,5 +84,73 @@
 }
 
 .contact__page-code {
+  padding-left: 80px;
   width: 50%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__page-code p {
+  font-family: Fira Code;
+  width: 95%;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 150%; /* 27px */
+}
+
+.contact__page-code div {
+  margin-left: 15px;
+}
+.contact__page-code__dataType {
+  color: #c98bdf;
+}
+
+.contact__page-code__syntax {
+  color: #5565e8;
+}
+
+.contact__page-code__symbol {
+  color: #607b96;
+}
+
+.contact__page-code__value {
+  color: #fea55f;
+}
+
+@media (max-width: 480px) {
+  .contact {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact__page {
+    left: unset;
+  }
+
+  .contact__page-form {
+    width: 100%;
+    border: none;
+  }
+
+  .contact__page-form form {
+    padding: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact__page-form label {
+    width: 100%;
+  }
+
+  .contact__page-form input,
+  .contact__page-form textarea {
+    font-size: 16px;
+    padding: 8px 10px;
+    width: 100%;
+  }
+  .contact__page-code {
+    display: none;
+  }
 }
