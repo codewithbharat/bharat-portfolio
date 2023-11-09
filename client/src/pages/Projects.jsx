@@ -12,7 +12,7 @@ const Projects = () => {
             <Sidebar brand="Projects">
                 children
             </Sidebar>
-            <Tab name="contacts" />
+            <Tab name="projects" />
             projects
         </div>
     )
