@@ -38,7 +38,7 @@ const ProjectCard = () => {
             <div className="card">
                 <img src="/project.jpeg" alt="" />
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quisquam?</p>
-                <a href="#">View-projects</a>
+                <a href="#">View-project</a>
             </div>
         </div>
     )
