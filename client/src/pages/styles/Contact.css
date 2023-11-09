@@ -12,6 +12,28 @@
   align-items: center;
 }
 
+.contact__sidebar__link {
+  display: flex;
+  padding-top: 6px;
+  align-items: center;
+  color: #607b96;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+.contact__sidebar__link-icon {
+  margin-right: 4px;
+}
+
+.contact__sidebar__link-name {
+  text-decoration: none;
+  color: inherit;
+  font-family: Fira Code;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .contact__page {
   position: absolute;
   top: 31px;
