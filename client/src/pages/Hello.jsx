@@ -20,7 +20,7 @@ const Hello = () => {
                 transition={{ duration: 0.3 }}
                 className="hello__text">
                 <div className="hello__text-intro">
-                    <span>Hi all, I am</span>
+                    <span>Hello, I am</span>
                     <h1>Bharat Ranjan</h1>
                     <p> <IoIosArrowForward />Full-stack Developer</p>
                 </div>
