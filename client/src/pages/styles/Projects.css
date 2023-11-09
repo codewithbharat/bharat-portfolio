@@ -84,7 +84,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 6px;
 }
 
 /* Track */
@@ -94,12 +94,12 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #0a2787;
+  background: #02345b;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #045594;
 }
 
 @media (max-width: 480px) {
