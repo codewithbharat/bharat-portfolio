@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 import { GrMail } from 'react-icons/gr'
 import { BiSolidPhoneCall } from 'react-icons/bi'
 import { IoLogoWhatsapp } from 'react-icons/io'
+import { FaTelegram } from 'react-icons/fa'
 
 const Contact = () => {
 
@@ -17,6 +18,14 @@ const Contact = () => {
     useEffect(() => {
         document.title = "Contact Me";
     }, []);
+
+    const LinkData = [
+        { icon: <GrMail />, name: "bhaarat.ranjan@gmail.com", link: "mailto:bhaarat.ranjan@gmail.com" },
+        { icon: <BiSolidPhoneCall />, name: "+91-9162601061", link: "tel:+919162601061" },
+        { icon: <IoLogoWhatsapp />, name: "+91-9162601061", link: "https://wa.me/+919162601061" },
+        { icon: <FaTelegram />, name: "bhaarat_ranjan", link: "https://t.me/bhaarat_ranjan" }
+
+    ]
 
     const SidebarLink = ({ icon, name, link }) => {
         return (
@@ -31,9 +40,11 @@ const Contact = () => {
         <div className="contact">
             <Tab name="contacts" />
             <Sidebar brand="Contact">
-                <SidebarLink icon={<GrMail />} name="bhaarat.ranjan@gmail.com" link="mailto:bhaarat.ranjan@gmail.com" />
-                <SidebarLink icon={<BiSolidPhoneCall />} name="+91-9162601061" link="tel:+919162601061" />
-                <SidebarLink icon={<IoLogoWhatsapp />} name="+91-9162601061" link=" https://wa.me/+919162601061" />
+                {
+                    LinkData.map(({ icon, name, link }) => (
+                        <SidebarLink icon={icon} name={name} link={link} />
+                    ))
+                }
             </Sidebar>
             <motion.div
                 animate={{ opacity: 1 }}
