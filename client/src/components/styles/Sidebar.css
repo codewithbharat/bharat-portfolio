@@ -36,6 +36,7 @@
 
 .sidebar__child {
   padding: 10px 20px;
+  background-color: #011627;
 }
 
 @media (max-width: 480px) {
@@ -45,5 +46,9 @@
     position: absolute;
     bottom: unset;
     z-index: 1;
+  }
+
+  .sidebar__child {
+    box-shadow: -4px 4px 10px 2px black;
   }
 }
