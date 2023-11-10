@@ -10,6 +10,32 @@
   align-items: center;
 }
 
+.projects__sidebar__link {
+  display: flex;
+  padding-top: 6px;
+  align-items: center;
+  color: #607b96;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.projects__sidebar__link-checkbox {
+  margin-right: 10px;
+}
+
+.projects__sidebar__link-icon {
+  margin-right: 4px;
+}
+
+.projects__sidebar__link-name {
+  text-decoration: none;
+  color: inherit;
+  font-family: Fira Code;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .projects__page {
   position: absolute;
   top: 31px;
